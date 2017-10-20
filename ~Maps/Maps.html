@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GMA - Map</title>
+		<link type="text/css" href="css/map.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/map.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/aes.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places&sensor=true&key=AIzaSyDsQZs21U-eHOS8ctvuMuaW8TSbeH1PdJw"></script>
+	</head>
+	<body onload="initialize()">
+		<div class="panel panel-info">
+							<!--<div style="float:right; font-size: 80%; position: relative; top:-10px">
+								<a href="#">Forgot password?</a>
+							</div>-->
+			<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+			<div id="googleMap">
+				
+			</div>
+
+			<div id="panel" >
+				<form action="/" method="POST" id="form">
+					<input type="hidden" id="long" name="long" />
+					<input type="hidden" id="lat" name="lat"/>
+					<input class="btn btn-info" type="button" onclick="sign()" id="btn" value="確定" />
+					<input class="btn btn-info" type="button" onclick="back()" id="btn_back" value="回到主畫面" />
+				</form>
+			<div>
+		</div>
+		</div>
+	</body>
+</html>
